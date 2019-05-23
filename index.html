@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+   <title>Speed Tasks</title>
+   <style>
+      .mt-3{ margin-top: 3rem !important}
+      #nums-display { height: 50px }
+      #rounded { display: block; width: 60px; height: 60px; border-radius: 50px; background: #e31837;}
+      .hide { display: none; box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15); border: 0; border-radius: .125rem; }
+      .show { display: block; box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15); border: 0;
+      border-radius: .125rem; }
+      .sub-text { padding: 40px;}
+      .p-all { padding: 2px 40px; font-size: 2.5rem;}
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="columns twelve">
+            <h4 class="title">Task 1</h4>
+            <p>Task 1 - count 0 - 100 and on 100, repeat the cycle</p>
+            <div id="nums-display"></div>
+            <button type="click" class="button-primary" id="count-nums">Count Numbers</button>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 2</h4>
+            <p>Animate Runner</p>
+            <div id="runner-track"></div>
+            <button type="click" class="button-primary" id="start-runner">Run</button>
+            <button type="click" class="button-primary" id="stop-runner">Stop</button>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 3</h4>
+            <p>Animate object to specified dimensions</p>
+            <div id="rounded"></div>
+            <button type="click" class="button-primary mt-3" id="move-circle">Move Right</button>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 4</h4>
+            <p>Hide and Show Popup on page scroll</p>
+            <div class="hide" id="popup">
+               <p class="sub-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime beatae asperiores
+                  earum, facilis sit molestias obcaecati deleniti itaque adipisci eligendi.</p>
+            </div>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 5</h4>
+            <p>Show message on keydown - Press Enter on Keyboard</p>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 6</h4>
+            <p></p>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 7</h4>
+            <p>Windows.confirmation</p>
+            <button type="click" class="button-primary" id="js-pro">Click to answer Question</button>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 8</h4>
+            <p>Replace all 'E' characters in text input with the 'O' character</p>
+            <form class="u-full-width" id="string-form">
+               <input type="text" class="u-full-width" id="string-text">
+               <button type="click" class="button-primary">Replace Characters</button>
+            </form>
+            <div id="string-result"></div>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 9</h4>
+            <p>Sort Values and Keys from an Object</p>
+            <button type="click" class="button-primary" id="sort-obj">Sort Objects</button>
+            <div id="sort-object"></div>
+         </div>
+         <hr>
+         <div class="columns twelve mt-3">
+            <h4 class="title">Task 10</h4>
+            <p>Sort an array</p>
+            <button type="click" class="button-primary" id="sort-arr">Sort Array</button>
+            <div id="sort-array"></div>
+         </div>
+      </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
